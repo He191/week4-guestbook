@@ -1,6 +1,6 @@
 // store the shop Upgrade from the API
 async function getFeedbackFromDB(){
-    const response = await fetch ("http://localhost:8080/");
+    const response = await fetch ("https://week4-guestbook.onrender.com");
 // I need my data to be written in json.
     const data = await response.json();
     return data;
@@ -23,7 +23,7 @@ function handleSubmit(event) {
     const formData = new FormData(form);
     const formValues = Object.fromEntries(formData);
     // console.table(formValues);
-    fetch("http://localhost:8080/add", {
+    fetch("https://week4-guestbook.onrender.com/add", {
         method: "POST", // This is where we set the POST HTTP verb
         headers: {
           "Content-Type": "application/json", // This tells the server we're sending stringified JSON data
