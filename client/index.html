@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="./app.js" defer></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>Hetal's Guestbook</title>
+</head>
+
+<body>
+  <h1>Guestbook</h1>
+  <div id="main-container">
+    <form id="form-container">
+      <h3>Form</h3>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required ><br>
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" required ><br>
+        <label for="feedback">Feedback</label>
+        <input type="text" name="feedback" id="feedback" required ><br>
+      <button type="submit" id="button">Submit</button>
+    </form>
+    <div id="feedback-container">
+      <h3>User Feedback</h3>
+      <div id="innerFB"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
