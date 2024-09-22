@@ -15,7 +15,7 @@ h1,h3,label{
   background-color: bisque;
   padding: 10px;
   margin: 10px;
-  height: 70vh;
+  height: auto;
 }
 #feedback-container{
   width:50%;
@@ -39,8 +39,6 @@ h1,h3,label{
 }
 #button{
   display: inline-block;
-  position: fixed;
-  left:20%;
   padding: 15px 25px;
   font-size: 24px;
   cursor: pointer;
@@ -58,4 +56,24 @@ input{
   background-color:#999;
   padding: 10px;
   margin: 10px;
+}
+@media (max-width: 500px) {
+ 
+  #main-container {
+    display: block;
+  }
+  #form-container{
+    width:90%;
+  }
+  #feedback-container{
+    width:90%;
+  
+  }
+  .indFB{
+    padding:1px;
+    margin: 4px;
+    width: 100px;
+    height: 70px;
+  }
+  
 }
